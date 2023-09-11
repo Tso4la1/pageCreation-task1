@@ -11,5 +11,5 @@ function timeFormat(date){
     let milli = date.getTime();
 
 
-    return `The current time today is ${milli}`
+    return `The current UTC time in milliseconds is ${milli}`
 }
