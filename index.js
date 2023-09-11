@@ -2,7 +2,7 @@ const weekDay = ["Sunday", "Monday" , "Tuesday", "Wednesday", "Thursday", "Frida
 
 let date = new Date();
 let day = weekDay[date.getDay()];
-document.getElementById("currentDayOfTheWeek").innerHTML=`The current day of the week is ${day}`;
+document.querySelector("div[data-testid=currentUTCTime]").innerHTML=`The current day of the week is ${day}`;
 
 document.getElementById("currentUTCTime").innerHTML= timeFormat(date)
 
