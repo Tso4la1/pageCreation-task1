@@ -8,13 +8,8 @@ document.getElementById("currentUTCTime").innerHTML= timeFormat(date)
 
 
 function timeFormat(date){
-    let hour = date.getHours();
-    let min = date.getMinutes();
-    let sec = date.getSeconds();
-    let milli = date.getMilliseconds();
-    let morningNoon = hour >= 12 ? "pm" : "am"
+    let milli = date.getTime();
 
-    hour = (hour % 12 ) || 12;
 
-    return `The current time today is ${hour}:${min}:${sec}:${milli} ${morningNoon}`
+    return `The current time today is ${milli}`
 }
